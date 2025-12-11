@@ -1,0 +1,22 @@
+# Node / Nest artifacts
+node_modules
+dist
+
+# Environment and local config
+.env
+.env.*
+
+# Logs and coverage
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage
+
+# Editor / OS
+.DS_Store
+.idea
+.vscode
+*.swp
