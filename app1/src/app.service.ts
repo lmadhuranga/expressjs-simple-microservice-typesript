@@ -14,10 +14,11 @@ export class AppService implements OnModuleInit {
     await this.app2Client.connect();
   }
 
-  async pingApp2(message?: string): Promise<string> {
+  async pingApp2(message?: string, username?: string): Promise<string> {
     const payload = {
       text: message ?? 'Hello from app1',
       sentAt: new Date().toISOString(),
+      user: username ?? 'anonymous',
     };
 
     // Send an RPC-style message to app2 and await the response

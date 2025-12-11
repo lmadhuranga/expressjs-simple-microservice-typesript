@@ -9,7 +9,7 @@ export class AppController {
   @MessagePattern('ping2')
   handlePing(@Payload() data: { text?: string; sentAt?: string }): string {
     // eslint-disable-next-line no-console
-    console.log('app2 handler hit: MessagePattern "ping"');
+    console.log('app2 handler hit: MessagePattern "ping2"');
     // Reply back to app1 with details about what we received
     return this.appService.replyToPing(data);
   }
